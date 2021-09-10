@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  padding: 0 20px;
+  color: #373f51;
+  font-family: tahoma;
+}
+
+/*Header Part*/
+
+header{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+
+header .main-nav ul li{
+    color: #999;
+    font-size: bold;
+    cursor: pointer;
+    list-style: none;
+    margin-left: 10px;
+    transition: 0.3s ease;
+    display: inline-block;
+    font-family: tahoma;
+}
+
+header .main-nav ul li:hover{
+    color: #373f51;
+}
+
+header .social i{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+header .social i:nth-child(1) {
+    color: #dfc2f2;
+}
+
+header .social i:nth-child(2) {
+    color: #dfc2f2;
+}
+
+header .social i:nth-child(3) {
+    color: #cfb3cd;
+}
+
+/*Item Box*/
+
+.item-box{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.item-box div{
+    width: 50%;
+    display: inline-block;
+    flex-basis: 50%;
+}
+
+.item-box div h2{
+    color: #373f51;
+    font-size: 55px;
+    margin-bottom: 30px;
+    display: inline-block;
+    font-family: tahoma;
+    text-transform: uppercase;
+}
+
+.item-box div p{
+    font-size: 18px;
+}
+
+.item-box .text-box{
+    color: #333333;
+    width: auto;
+    padding: 10%;
+    height: auto;
+}
+
+.item-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-box .explore-now span{
+    font-size: 60px;
+    color: #d8dbe2;
+}
+
+.item-box .explore-now span sub{
+    font-size: 30px;
+}
+
+.item-box .explore-now h2{
+    font-size: 20px;
+}
+
+.item-box .contact-form input, .item-box .contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #d8dbe2;
+    font-family: tahoma;
+    resize: none;
+}
+
+/* Button */
+
+.old-car button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.old-car button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.explore-now button{
+    color: #333;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: bold;
+    background: transparent;
+}
+
+.explore-now button::after{
+    content: '\f30b';
+    font-family: "Font Awesome 5 Free";
+    transform: translateX(7px);
+    display: inline-block;
+    transition: all 0.3s ease-out;
+}
+
+.form-button {
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-button:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+  
+/* Responsive */
+
+@media only screen and (max-width: 1200px) {
+    body{
+        padding: 0 10px;
+      }
+}
+
+@media only screen and (max-width: 992px) {
+    body{
+        padding: 0 5px;
+      }
+    .item-box{
+        flex-direction: column;
+        align-items: center;
+      }
+	.img-box{
+		order: 1;
+	}
+	.text-box{
+		order: 2;
+	}
+}
+ 
+  
+  
